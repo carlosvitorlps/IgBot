@@ -68,5 +68,5 @@ if __name__ == '__main__':
     user = input('Usuário: ')
     senha = getpass.getpass("Enter your password: ")
     ig_bot = InstagramBot(user, senha)
-    #
-    ig_bot.comentar_publicacao('p/CDBnmPdp7qg')  # endereço da publicação
+    # intagram.com/('post_id')/
+    ig_bot.comentar_publicacao('p/CDBnmPdp7qg')
