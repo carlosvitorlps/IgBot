@@ -2,6 +2,7 @@ from selenium import webdriver
 import time
 import random
 import getpass
+from name_list import nomes
 
 
 class InstagramBot:
@@ -50,28 +51,7 @@ class InstagramBot:
 
         time.sleep(random.randint(2, 4))
 
-        marcacao = ["@yanneareas  @liviagomesreis  @luluzinha_avila",
-                    "@yanneareas  @liviagomesreis  @animacaoleticia",
-                    "@yanneareas  @liviagomesreis  @darcielyf",
-                    "@yanneareas  @liviagomesreis  @thaisgetti",
-                    "@yanneareas  @luluzinha_avila  @animacaoleticia",
-                    "@yanneareas  @luluzinha_avila  @darcielyf",
-                    "@yanneareas  @luluzinha_avila  @thaisgetti",
-                    "@yanneareas  @animacaoleticia  @darcielyf",
-                    "@yanneareas  @animacaoleticia  @thaisgetti",
-                    "@yanneareas  @darcielyf  @thaisgetti",
-                    "@liviagomesreis  @luluzinha_avila  @animacaoleticia",
-                    "@liviagomesreis  @luluzinha_avila  @darcielyf",
-                    "@liviagomesreis  @luluzinha_avila  @thaisgetti",
-                    "@liviagomesreis  @animacaoleticia  @darcielyf",
-                    "@liviagomesreis  @animacaoleticia  @thaisgetti",
-                    "@liviagomesreis  @darcielyf  @thaisgetti",
-                    "@luluzinha_avila  @animacaoleticia  @darcielyf",
-                    "@luluzinha_avila  @animacaoleticia  @thaisgetti",
-                    "@luluzinha_avila  @darcielyf  @thaisgetti",
-                    "mariaclaramenezes__ @darcielyf  @thaisgetti",
-                    "mariaclaramenezes__ @martaarteira56  @thaisgetti",
-                    "@ribeirocosta90  @darcielyf  @alessandracdancer"]
+        marcacao = nomes
 
         while True:
             self.digite_como_uma_pessoa(random.choice(
@@ -85,9 +65,8 @@ class InstagramBot:
 
 
 if __name__ == '__main__':
-    # não é boa prática. olhar o conceito do .gitignore
-
     user = input('Usuário: ')
     senha = getpass.getpass("Enter your password: ")
     ig_bot = InstagramBot(user, senha)
+    #
     ig_bot.comentar_publicacao('p/CDBnmPdp7qg')  # endereço da publicação
