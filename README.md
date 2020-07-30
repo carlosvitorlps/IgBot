@@ -22,3 +22,5 @@ You can install in this link https://chromedriver.chromium.org/downloads the apr
 
 You'll had to change the name of the 'data_list example.py' to 'data_lis.py' and do the modification that you need.
 
+**That's a While True loop. So it'll be working all the time. To stop you'll have to interrup the code. **
+
