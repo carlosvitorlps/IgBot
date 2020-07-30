@@ -15,7 +15,7 @@ So, that's a bot to comment on a certain post that I choose.
 - Google Chrome 84
 - Python 3.8.2
 
-## Instructions
+## Instruction
 
 To use the selenium I had to install it before and had to let the chromedriver.exe file on the path of the project
 You can install in this link https://chromedriver.chromium.org/downloads the apropriete version to your Chrome navigator
