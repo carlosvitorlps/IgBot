@@ -45,7 +45,8 @@ class InstagramBot:
 
         # clicando na caixa de comentário
 
-        text_box = '//*[@id="react-root"]/section/main/div/div[1]/article/div/div[3]/section[3]/div/form/textarea'
+        text_box = '//*[@id="react-root"]/section/main/div/div[1]/article/\
+            div/div[3]/section[3]/div/form/textarea'
         self.driver.find_element_by_xpath(text_box).click()
 
         time.sleep(random.randint(2, 4))
@@ -59,7 +60,8 @@ class InstagramBot:
             self.type_as_person((sample_3), where_type)
             time.sleep(random.randint(2, 4))
 
-            post_button = '//*[@id="react-root"]/section/main/div/div[1]/article/div/div[3]/section[3]/div/form/button'
+            post_button = '//*[@id="react-root"]/section/main/div/div[1]/article/\
+                div/div[3]/section[3]/div/form/button'
             self.driver.find_element_by_xpath(post_button).click()
             time.sleep(random.randint(100, 300))
 
